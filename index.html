@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmRoot</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<>
+    <nav id="navbar">
+        <div id="logo">
+
+        </div>
+
+        <ul>
+            <li class="item"><a>Home</a></li>
+          
+            <li class="item"><a href="services.html">Services</a></li>
+            <li class="item"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 style="font-size: 90px;color:blue;">Welcome to Rooted Farming</h1>
+        <br>
+        <br>
+        <p style="font-size:50px;">Place where Info-Tech And Farming Meet</p>
+        <br>
+        <br>
+        <br>
+        
+       <p style="font-size:40px;color:yellow;">Technology will never replace hard work,</p>
+       <p style="font-size:40px;color:yellow;">but it can make hard work more efficient</p>
+
+       
+      
+    </section>
+    <br><br><br><br><br><br><br><br>
+    
+
+
+
+  
+
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="https://thumbs.dreamstime.com/b/agro-engineering-staff-having-discussion-new-sorts-plants-spacious-greenhouse-talk-agricultural-experts-100513674.jpg" style="width:100%">
+    <div class="text"><div>
+      <form action="connect.html" >
+        <input type="submit" value="EXPERT TALK" id="view">
+    </form>
+
+    </div>
+      </div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="https://tractorguru.in/upload/tractor/Blogs/For%20Mobile%20Blogs/Importance%20of%20Weather%20M.jpg" style="width:100%">
+    <div class="text" id="a1">
+      <form action="alter.html" >
+        <input type="submit" value="ESTIMATING WEATHER" id="view2">
+    </form>
+    
+    </div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="https://foodprint.org/wp-content/uploads/2020/04/AdobeStock_11334480_1920x960.jpg" style="width:100%">
+    <div class="text">
+      <form action="ranking.php" >
+        <input type="submit" value="HIRE AGRICULTURAL LABOUR" id="view1">
+    </form>
+    
+    </div>
+  </div>
+
+
+  
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+  <br><br><br>
+  
+  <h1 style="font-size: 45px ;color:green;"><center>OUR SPECIALITY</center></h1>
+  <div class="p">
+  <ul>
+    <center><li>Providing Availble People resorces required for works like sowing,Putting Pesticides</li></center>
+    <center><li>Providing Weather Estimation</li></center>
+    <center><li>Providing Availble Pesticides or Fertilizers at best price from market</li></center>
+    <center><li>Connecting With farming Experts</li></center>
+    <center><li>Creating Job Employement</li></center>
+  </ul>
+</div>
+  
+
+
+
+     
+
+
+
+
+ 
+ 
+  
+  
+
+    
+
+
+
+
+
+
+
+</body>
+</html>
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>

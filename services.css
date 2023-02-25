@@ -1,0 +1,40 @@
+#services{
+    flex-direction: column;
+}
+
+#services .box { 
+    padding: 14px;
+    margin: 2px 0px; 
+    margin-bottom: 20px;
+}
+#services-container{
+    background:url('../IMG/bg4.jpg') no-repeat center center/cover;
+}
+#services{
+    margin: 34px;
+    display: flex;
+    flex-direction: row;
+}
+#services_h2{
+    color: white;
+    text-shadow: 2px 2px darkgreen;
+}
+#services .box{ 
+    border: 4px solid darkgreen;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: rgb(191, 207, 158);
+    margin-bottom: 20px;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+}
